@@ -1,3 +1,7 @@
+package service;
+
+import model.Livro;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +18,7 @@ public class Biblioteca {
     public Livro buscarPorID(int id){
         Livro livro = livros.get(id);
         if (livro == null){
-            throw new IllegalArgumentException("Livro não encontrado para o ID: " + id);
+            throw new IllegalArgumentException("model.Livro não encontrado para o ID: " + id);
         }
         return livro;
     }

@@ -1,3 +1,6 @@
+import model.Livro;
+import service.Biblioteca;
+
 import java.util.Scanner;
 
 public class Main {
@@ -47,21 +50,21 @@ public class Main {
                     System.out.print("Insira o ID: ");
                     int id = sc.nextInt();
                     biblioteca.emprestarLivro(id);
-                    System.out.println("Livro emprestado com sucesso!");
+                    System.out.println("model.Livro emprestado com sucesso!");
                     break;
                 }
                 case 5: {
                     System.out.print("Insira o ID: ");
                     int id = sc.nextInt();
                     biblioteca.devolverLivro(id);
-                    System.out.println("Livro devolvido com sucesso!");
+                    System.out.println("model.Livro devolvido com sucesso!");
                     break;
                 }
                 case 6: {
                     System.out.print("Insira o ID: ");
                     int id = sc.nextInt();
                     biblioteca.deletar(id);
-                    System.out.println("Livro deletado com sucesso!");
+                    System.out.println("model.Livro deletado com sucesso!");
                     break;
                 }
             }

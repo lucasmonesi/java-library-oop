@@ -1,3 +1,5 @@
+package model;
+
 public class Livro {
     private final int id;
     private final String titulo;
@@ -37,6 +39,6 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro: { ID: " + id + ", Titulo: "  + titulo + ", Autor: " + autor + ", Ano:" + ano + ", Situação: " + emprestado + " }";
+        return "model.Livro: { ID: " + id + ", Titulo: "  + titulo + ", Autor: " + autor + ", Ano:" + ano + ", Situação: " + emprestado + " }";
     }
 }
